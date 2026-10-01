@@ -1,0 +1,4 @@
+* text=auto
+*.html -text
+*.png binary
+*.zip binary

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-01",
+  "artifact": "쿠팡허브_화재탈출.html",
+  "bytes": 725731,
+  "sha256": "B9D8AF9D4AC91FF1904DB0C5C03AFC0ABF7E52234C7D27450E7EF86DDF4EA31D",
+  "requiredFiles": 13,
+  "verifiedFiles": 13,
+  "browser": "Chromium via agent-browser 0.38.1",
+  "threeRevision": "160",
+  "viewports": [
+    "1440x900",
+    "390x844"
+  ],
+  "offlineFileExecution": true,
+  "networkResources": 0,
+  "passed": [
+    "3D rendering",
+    "keyboard movement",
+    "pause timer freeze",
+    "crouch and alert toggles",
+    "zero-exposure detour to assembly",
+    "119 correct-answer feedback",
+    "100-point report",
+    "standing smoke exposure 9 per second",
+    "crouched smoke exposure 3.2 per second",
+    "fire barrier collision",
+    "exposure failure at 100",
+    "restart resets state",
+    "native pointer direction-pad movement and release",
+    "mobile viewport without horizontal overflow",
+    "mobile offline full walkthrough",
+    "fresh final browser errors: 0"
+  ],
+  "notes": [
+    "Three.js bundled global build emits a non-fatal deprecation warning.",
+    "An initial synthetic pointer test used an unregistered pointer ID; replaced with native browser pointer input. Final fresh browser session had zero page errors.",
+    "Classroom hardware and physical evacuation are not validated."
+  ]
+}

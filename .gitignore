@@ -1,0 +1,6 @@
+/node_modules/
+/.venv/
+/.publish/
+/.download-verify/
+/r.name)
+*.log

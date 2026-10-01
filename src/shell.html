@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#11181c"><title>LAST EXIT — 쿠팡 허브 화재 탈출</title>
+<style>/* STYLES */</style>
+</head>
+<body>
+<div id="scene" aria-label="3D 물류 허브 훈련장"></div><div id="vignette"></div><div id="damage"></div>
+<header class="topbar"><a class="brand" href="#" aria-label="게임 처음 화면" id="home"><span class="brand-mark">↗</span> LAST EXIT<span class="brand-sub">EVACUATION LAB</span></a><div class="course">소방환경방재학과 <span>현장 판단 시뮬레이션</span></div><div class="header-actions"><button class="icon-btn" id="sound" aria-label="소리 켜기" title="소리 켜기">소리 OFF</button><button class="icon-btn" id="help" aria-label="조작 방법 보기">?</button></div></header>
+<main id="intro" class="intro">
+<div class="hero"><div class="eyebrow"><span class="status-dot"></span> FIRE ESCAPE SIMULATION <span class="edition">01</span></div><p class="subtitle">쿠팡 허브 화재 탈출</p><h1>판단은 침착하게.<br>탈출은 안전하게<span class="orange">.</span></h1><p class="hero-description">익숙했던 물류 허브가 위험 구역으로 바뀌었다.<br>불과 연기를 피해, 초록색 비상구 너머로.</p><div class="start-row"><button id="start" class="primary" disabled>훈련장 준비 중 <span>↗</span></button><span class="play-meta">1인 플레이<br><b>약 1–3분 · 3D 훈련</b></span></div><div class="quick-controls"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 이동</span><span><kbd>C</kbd> 낮은 자세</span><span><kbd>E</kbd> 화재 알림</span></div><p class="fiction">쿠팡 허브를 가정한 가상 시나리오입니다.<br>실제 시설·사고를 재현하거나 쿠팡이 제작한 게임이 아닙니다.</p></div>
+<div class="scene-tag"><span class="status-dot"></span> HUB 03 <span>가상 물류센터</span><small>WAREHOUSE / TRAINING GROUND</small></div>
+<div class="lesson-strip"><div><span>01</span><p>주변에 알리기<small>“불이야!” 대피하며 알림</small></p></div><div><span>02</span><p>안전한 경로 찾기<small>불길을 우회해 비상구로</small></p></div><div><span>03</span><p>집결하고 신고하기<small>안전한 밖에서 119 신고</small></p></div><div class="strip-label">강원도립대학교<br><b>소방환경방재학과</b></div></div>
+</main>
+<section id="hud" hidden aria-label="게임 정보"><div class="mission panel"><span class="micro">CURRENT OBJECTIVE</span><h2 id="objective">초록색 비상구를 찾아 탈출하세요</h2><p id="mission-hint">불길을 우회해 옥외 집결지까지 이동</p><div class="progress-track"><i id="progress"></i></div></div><div class="telemetry panel"><div><span>훈련 시간</span><b id="time">00:00</b></div><div><span>위험 노출 <small>게임 지표</small></span><b id="exposure">0<small>/100</small></b></div><div class="exposure-track"><i id="exposure-bar"></i></div><span id="stance">서서 이동 중</span></div><div class="map panel"><div class="map-title">HUB 03 <span>피난 안내도</span></div><canvas id="minimap" width="216" height="278" aria-label="나의 위치, 불길과 연기 및 비상구 표시"></canvas><div class="map-legend"><span class="you">● 나</span><span class="fire">● 불</span><span class="exit">● 집결지</span></div></div><div id="toast" class="toast" aria-live="polite"></div><div class="bottom-controls panel"><span><kbd>W A S D</kbd> / <kbd>↑↓←→</kbd> 이동</span><button id="crouch">C &nbsp; 낮은 자세</button><button id="alert">E &nbsp; “불이야!”</button><button id="pause">Esc &nbsp; 일시정지</button></div><div id="touch-controls"><div class="dpad"><button data-key="ArrowUp" aria-label="앞으로 이동">↑</button><button data-key="ArrowLeft" aria-label="왼쪽 이동">←</button><button data-key="ArrowDown" aria-label="뒤로 이동">↓</button><button data-key="ArrowRight" aria-label="오른쪽 이동">→</button></div></div></section>
+<div id="modal" class="modal" hidden><section class="dialog" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" tabindex="-1"></section></div>
+<div id="fatal" hidden><h2>3D 화면을 시작할 수 없어요</h2><p>Chrome 또는 Edge에서 다시 열고, 브라우저의 그래픽 가속을 켜 주세요.</p><p id="fatal-detail"></p><button onclick="location.reload()">다시 열기</button></div>
+<script>/* THREE */</script><script>/* WORLD */</script><script>/* GAME */</script>
+</body></html>
